@@ -12,7 +12,7 @@ spring:
   jpa:
     show-sql: true
 
-env: dev5
+env: dev6
 # 修改Ribbon负载均衡策略
 #SALES-PRODUCT:
 #  ribbon:
