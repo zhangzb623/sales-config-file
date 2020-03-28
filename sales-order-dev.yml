@@ -17,3 +17,6 @@ env: dev3
 #SALES-PRODUCT:
 #  ribbon:
 #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+girl:
+  name: lyz
+  age: 18
