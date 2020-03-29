@@ -1,6 +1,4 @@
 
-server:
-  port: 8890
 spring:
   application:
     name: SALES-ORDER
