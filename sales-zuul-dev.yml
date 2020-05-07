@@ -1,0 +1,22 @@
+
+zuul:
+  #排除某些路由
+  ignored-patterns:
+    - /**/product/listForOrder
+  routes:
+    #路由配置
+    #/myProduct/product/list -> /sales-product/product/list
+    myProduct:
+      path: /myProduct/**
+      serviceId: sales-product
+      #敏感头的过滤 如cookie需要接收，则需要设置为空
+      sensitiveHeaders:
+      #路由配置-简洁模式
+#    sales-product: /myProduct/**
+
+# http://localhost:9000/actuator/routes 查看所有配置的路由时，报404 需要暴露出来才能访问
+management:
+  endpoints:
+    web:
+      exposure:
+        include: routes
